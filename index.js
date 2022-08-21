@@ -109,3 +109,17 @@ function totalYearsLivedCalc(total, inventors) {
 
 var totalYearsLived = inventors.reduce(totalYearsLivedCalc, 0);
 console.warn("total years lived:", totalYearsLived);
+
+//homework 13
+// inventors.forEach((inventor) => {
+//   console.log(inventor.first, inventor.passed - inventor.year);
+// });
+
+function sortInventorsByYearsLived(inventors) {
+  inventors.sort((a, b) => {
+    return a.passed - a.year - (b.passed - b.year);
+  });
+}
+
+sortInventorsByYearsLived(inventors);
+console.log(inventors);
