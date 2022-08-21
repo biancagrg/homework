@@ -123,3 +123,11 @@ function sortInventorsByYearsLived(inventors) {
 
 sortInventorsByYearsLived(inventors);
 console.log(inventors);
+
+//homework 14
+console.warn("HW14");
+
+//homework 16
+const over19 = (friend) => 2022 - friend.year >= 19;
+
+console.log("at least one person is 19 or older:", friends.some(over19));
