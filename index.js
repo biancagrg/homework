@@ -134,3 +134,8 @@ console.log("at least one person is 19 or older:", friends.some(over19));
 
 //homework 17
 console.warn("every person is 19 or older:", friends.every(over19));
+
+//homework 18
+const givenId = (comment) => comment.id === 823423;
+
+console.log("element with the given ID:", comments.find(givenId));
