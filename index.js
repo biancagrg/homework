@@ -131,3 +131,6 @@ console.warn("HW14");
 const over19 = (friend) => 2022 - friend.year >= 19;
 
 console.log("at least one person is 19 or older:", friends.some(over19));
+
+//homework 17
+console.warn("every person is 19 or older:", friends.every(over19));
