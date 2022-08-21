@@ -138,4 +138,8 @@ console.warn("every person is 19 or older:", friends.every(over19));
 //homework 18
 const givenId = (comment) => comment.id === 823423;
 
-console.log("element with the given ID:", comments.find(givenId));
+console.log("comment with the given ID:", comments.find(givenId));
+
+//homework 19
+comments.splice(comments.findIndex(givenId), 1);
+console.warn("comments array with one comment removed", comments);
