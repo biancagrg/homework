@@ -125,7 +125,22 @@ sortInventorsByYearsLived(inventors);
 console.log(inventors);
 
 //homework 14
-console.warn("HW14");
+const boulevardsOfParis = [
+  "Boulevard Auguste-Blanqui",
+  "Boulevard Barbes",
+  "Boulevard de l'Amiral-Bruix",
+  "Boulevard des Capucines",
+  "Boulevard de Clichy",
+  "Boulevard des Italines",
+  "Boulevard Madeleine",
+];
+
+const selectedBoulevardsOfParis = boulevardsOfParis.filter(
+  (boulevardOfParis) => {
+    return boulevardOfParis.includes("de");
+  }
+);
+console.warn("selected boulevards of Paris", selectedBoulevardsOfParis);
 
 //homework 16
 const over19 = (friend) => 2022 - friend.year >= 19;
